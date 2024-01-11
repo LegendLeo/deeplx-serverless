@@ -1,14 +1,19 @@
 {
-  "name": "deepl",
+  "name": "deeplx-serverless",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "DeepLX Free API for serverless",
+  "main": "translate.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "zip": "zip -r dist.zip ./"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "deeplx",
+    "deepl",
+    "translate",
+    "serverless"
+  ],
+  "license": "MIT",
   "dependencies": {
     "axios": "^1.6.3",
     "body-parser": "^1.20.2",
