@@ -84,8 +84,34 @@ curl --location 'https://service-aaaaa.gz.apigw.tencentcs.com/translate' \
 尽管本项目是专为 serverless 适配的方案，但是也能使用自己提供服务器进行部署
 
 ``` bash
+# linux/macos 下
 git clone https://github.com/LegendLeo/deeplx-serverless
+
+# 安装 NVM (Node 版本管理器)
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+# Node.js LTS版本
+nvm install 20
+
+# 确认版本
+node -v # should print `v20.11.1`
+
+# 确认版本
+npm -v # should print `10.2.4`
+
 cd deeplx-serverless
 npm install
+
+# 守护进程
+sudo apt install screen
+
+# 创建守护进程
+screen -S 进程名（随便取）
+
+# 运行完后可关闭终端
+cd deeplx-serverless
 npm run start
+
+# 随便哪个终端检查进程
+screen -ls
 ```
