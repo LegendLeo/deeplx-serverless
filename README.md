@@ -1,5 +1,7 @@
 # DeepLX Serverless
 
+[English](./README_en.md) | 简体中文
+
 DeepLX 免费翻译API**腾讯云函数部署版**，与[原项目DeepLX](https://github.com/OwO-Network/DeepLX)的区别在于**利用了云函数的请求IP不固定的特性，极大程度上避免了`429`请求太频繁报错**
 
 感谢原项目[OwO-Network/DeepLX](https://github.com/OwO-Network/DeepLX)提供的灵感，这是本项目的坚实基础
@@ -12,6 +14,8 @@ DeepLX 免费翻译API**腾讯云函数部署版**，与[原项目DeepLX](https:
 - 一个腾讯旗下的账号或者手机号
 
 ### Deploy | 部署
+
+#### Tencent Cloud | 腾讯云
 
 在 [https://cloud.tencent.com/](https://cloud.tencent.com/) 注册账号
 
@@ -38,6 +42,11 @@ DeepLX 免费翻译API**腾讯云函数部署版**，与[原项目DeepLX](https:
 
 此时已部署完成，可以点击“完成”按钮，进入【函数管理】，点击【函数代码】，往下拉，找到【访问路径】并复制后续使用
 
+#### Vercel | 部署到 Vercel
+
+现已支持部署到 Vercel，请点击下方按钮进行一键部署（经测试，稳定性不如腾讯云，容易出现429错误）
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FLegendLeo%2Fdeeplx-serverless)
 
 ### How to use | 如何使用
 
